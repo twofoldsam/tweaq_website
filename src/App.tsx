@@ -98,11 +98,16 @@ export default function App() {
                   <div className="absolute -inset-1 bg-gradient-to-r from-orange-600 to-amber-600 rounded-xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
                   
                   {/* Button */}
-                  <Button className="relative bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white border-0 px-8 py-6 rounded-xl shadow-2xl shadow-orange-600/25 transition-all duration-300 group-hover:shadow-orange-600/40 group-hover:-translate-y-0.5 backdrop-blur-sm">
-                    <span className="relative z-10">Request early access</span>
-                    
-                    {/* Inner highlight */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
+                  <Button 
+                    asChild
+                    className="relative bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white border-0 px-8 py-6 rounded-xl shadow-2xl shadow-orange-600/25 transition-all duration-300 group-hover:shadow-orange-600/40 group-hover:-translate-y-0.5 backdrop-blur-sm"
+                  >
+                    <a href="mailto:sam@tweaq.ai?subject=Early%20Access%20Request&body=Hey!%0A%0AI'd%20like%20to%20request%20early%20access%20to%20Tweaq!%0A%0AIf%20you%20have%20a%20moment%2C%20it%20would%20be%20great%20to%20learn%20a%20bit%20about%20you%20(but%20feel%20free%20to%20skip%20anything%20you%20prefer%20not%20to%20share)%3A%0A%0AName%3A%20%0ACompany%2FTeam%3A%20%0ARole%3A%20%0ACurrent%20design%20QA%20challenges%3A%20%0A%0AThanks!">
+                      <span className="relative z-10">Request early access</span>
+                      
+                      {/* Inner highlight */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl"></div>
+                    </a>
                   </Button>
                 </div>
               </div>
