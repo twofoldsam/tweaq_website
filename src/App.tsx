@@ -9,9 +9,14 @@ export default function App() {
         {/* Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-black to-zinc-950"></div>
         
-        {/* Radial highlights */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[800px] bg-gradient-radial from-orange-950/40 via-transparent to-transparent blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/3 w-[600px] h-[600px] bg-gradient-radial from-amber-950/30 via-transparent to-transparent blur-3xl"></div>
+        {/* Animated radial highlights with breathing effect */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[800px] bg-gradient-radial from-orange-950/40 via-transparent to-transparent blur-3xl" style={{animation: 'pulse-glow 8s ease-in-out infinite'}}></div>
+        <div className="absolute bottom-0 right-1/3 w-[600px] h-[600px] bg-gradient-radial from-amber-950/30 via-transparent to-transparent blur-3xl" style={{animation: 'pulse-glow 10s ease-in-out infinite 2s'}}></div>
+        
+        {/* Floating orbs */}
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-radial from-orange-900/20 via-orange-950/10 to-transparent rounded-full blur-2xl" style={{animation: 'float 20s ease-in-out infinite'}}></div>
+        <div className="absolute top-2/3 right-1/4 w-48 h-48 bg-gradient-radial from-amber-900/20 via-amber-950/10 to-transparent rounded-full blur-2xl" style={{animation: 'float-delayed 25s ease-in-out infinite'}}></div>
+        <div className="absolute top-1/2 left-2/3 w-56 h-56 bg-gradient-radial from-orange-900/15 via-orange-950/5 to-transparent rounded-full blur-2xl" style={{animation: 'float 30s ease-in-out infinite 5s'}}></div>
         
         {/* Noise texture overlay */}
         <div className="absolute inset-0 opacity-[0.015] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIG9wYWNpdHk9IjAuNSI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjMwIiByPSIxIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxNzAiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjIwIiBjeT0iMTMwIiByPSIxIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxODAiIGN5PSI5MCIgcj0iMSIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iNzAiIGN5PSIxMTAiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjEzMCIgY3k9IjE0MCIgcj0iMSIgZmlsbD0id2hpdGUiLz4KPC9nPgo8L3N2Zz4K')] bg-repeat"></div>
@@ -117,24 +122,6 @@ export default function App() {
 
         {/* Footer */}
         <footer className="pb-8">
-          <div className="flex justify-center">
-            <div className="flex items-center space-x-3 text-zinc-500">
-              {/* Animated dots */}
-              <div className="flex space-x-1">
-                <div className="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse" style={{animationDelay: '0ms'}}></div>
-                <div className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse" style={{animationDelay: '150ms'}}></div>
-                <div className="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse" style={{animationDelay: '300ms'}}></div>
-              </div>
-              
-              <span className="tracking-wide">Building the future of design collaboration</span>
-              
-              <div className="flex space-x-1">
-                <div className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse" style={{animationDelay: '0ms'}}></div>
-                <div className="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse" style={{animationDelay: '150ms'}}></div>
-                <div className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse" style={{animationDelay: '300ms'}}></div>
-              </div>
-            </div>
-          </div>
         </footer>
       </div>
     </div>
