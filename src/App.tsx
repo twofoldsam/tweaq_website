@@ -47,52 +47,19 @@ export default function App() {
         <main className="flex-1 flex items-center justify-center px-8">
           <div className="max-w-xl mx-auto space-y-12">
             
-            {/* Featured Quote */}
-            <div className="relative group">
-              {/* Background glow */}
-              <div className="absolute -inset-8 bg-gradient-to-r from-orange-600/5 via-amber-600/5 to-orange-600/5 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
-              
-              {/* Quote container */}
-              <div className="relative">
-                {/* Border gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-zinc-800/50 via-zinc-700/30 to-zinc-800/50 rounded-2xl"></div>
-                <div className="absolute inset-[1px] bg-gradient-to-b from-zinc-900/90 to-black/90 rounded-2xl"></div>
-                
-                {/* Content */}
-                <blockquote className="relative p-8 backdrop-blur-xl">
-                  {/* Quote mark */}
-                  <div className="absolute top-6 left-6">
-                    <div className="w-8 h-8 text-zinc-500/40">
-                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                      </svg>
-                    </div>
-                  </div>
-                  
-                  {/* Quote text */}
-                  <p className="text-zinc-100 mb-6 pl-4 pr-2 leading-relaxed">
-                    "Does anybody else find that the design QA process is extremely time consuming or is it just me?"
-                  </p>
-                  
-                  {/* Attribution */}
-                  <cite className="text-zinc-400 not-italic pl-4">
-                    – reddit user on r/UXDesign
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-
             {/* Value Proposition */}
             <div className="space-y-10">
               <div className="relative">
                 <p className="text-zinc-300 leading-loose tracking-wide">
-                  We're building a new way for teams to collaborate. With instant in-browser QA and automated code updates, you make edits and push code without ever leaving your site.
-                </p>
+                A new way for humans and AI agents to build software together.
+                With live multiplayer QA and comment-driven feedback on real builds, Tweaq turns your team’s insight into instant fixes; and helps your agents learn from every iteration. </p>
+              
+
                 <p className="text-zinc-300 mt-4 leading-loose tracking-wide">
-                  No more creating tickets to change the font weights, border radius or button colours; just Tweaq.
+                Stop raising tickets for tiny UI changes. Start improving your agents with real usage.
                 </p>
                 <p className="text-zinc-400 mt-4 leading-loose">
-                  While we're busy building, stay tuned - something exciting is coming soon.
+                  Beta access open now.
                 </p>
               </div>
 
